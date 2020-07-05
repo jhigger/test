@@ -32,13 +32,13 @@ function ItemDetail(props) {
 
 	return (
 		<div>
+			<div className="buttons">
+				<PrevButton className="button" prev={prev} />
+				<NextButton className="button" next={next} />
+			</div>
 			<h1>{item.name}</h1>
 			<div className="item">
 				<img src={item.url} alt="" />
-				<div className="buttons">
-					<PrevButton className="button" prev={prev} />
-					<NextButton className="button" next={next} />
-				</div>
 			</div>
 		</div>
 	);
